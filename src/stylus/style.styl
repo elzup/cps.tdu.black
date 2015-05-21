@@ -1,20 +1,62 @@
+@import url('/node_modules/css-reset/reset.css')
+
 html, body
   font-family "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro0"
 
 body
   padding 0
   margin 0
-  word-wrap break-word
 
 *
   word-wrap break-word
 
-#eyecatch
+header
   width 100%
   background url(img/eyecatch) no-repeat
   background-size cover
   padding 10px 10px
-  height 600px
+  height 420px
+  h1
+    color white
+    padding 30px
+    font-size 60px
+    line-height 1em
+
+theme(color)
+  margin 5px
+  h3
+    border 1px solid white
+    padding 0px 0px 0px 10px
+    font-size 12px
+    background color
+  p
+    padding 0 10px
+    font-size 12px
+
+#abstract
+  background #33B9FF
+  color white
+  .row.up
+    row-margin()
+    h2
+      padding 10px
+      width 40%
+      font-size 2em
+      line-height 1em
+    .subtext
+      width 60%
+  .row.down.themes
+    row-margin()
+    section
+      &.theme-1
+        theme(#CCD200)
+      &.theme-2
+        theme(#747474)
+      &.theme-3
+        theme(#15CA40)
+      ul
+        margin-right 10px
+
 
 h5
   border 1px solid white
@@ -22,25 +64,15 @@ h5
 
 .row
   display flex
-  padding 10px 10px
-  width 97%
-  div
-    margin 10px 10px
+  width 100%
 
-.blue
-  background #33B9FF
-  color white
+row-margin()
+  >*
+    margin 10px 10px
 
 .dark-blue
   background #8077AB
   color white
-
-.c4
-  font-size 2rem
-
-.col-l
-  width 30%
-
 
 .img-block-3
   width 30%
@@ -69,24 +101,7 @@ h5
 .house-right img
   width 260px
 
-.themes div:nth-of-type(1) h5
-  background #CCD200
-.themes div:nth-of-type(2) h5
-  background #747474
-.themes div:nth-of-type(3) h5
-  background #15CA40
 
-
-
-h1
-  color white
-  padding 30px
-    span:nth-of-type(1)
-      font-size 90px
-    span:nth-of-type(2)
-      font-size 43px
-    span:nth-of-type(3)
-      font-size 90px
 
 
 h3

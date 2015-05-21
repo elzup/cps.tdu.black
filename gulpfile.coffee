@@ -9,6 +9,7 @@ $ = require('gulp-load-plugins')()
 # src_dir = './src'
 # public_dir = './public'
 
+# NOTE: template -> jade, script -> coffee, script -> stylus のがいいかも?
 config =
   templates:
     source: './src/jade'
@@ -71,4 +72,4 @@ gulp.task 'watch', ->
   gulp.watch config.styles.watch, ['style']
 
 #load
-gulp.task 'default', ["script", "style"]
+gulp.task 'default', ["script", "style", "template"]
