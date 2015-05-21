@@ -13,19 +13,19 @@ config =
   templates:
     source: './src/jade'
     watch: './src/jade/**/*.jade'
-    destination: './public/templates'
+    destination: './'
     config:
       pretty: true
   scripts:
     source: './src/coffee'
     watch: './src/coffee/*.coffee'
-    destination: './public/scripts'
+    destination: './'
     option:
       bare: true
   styles:
     source: './src/stylus'
     watch: './src/stylus/*.styl'
-    destination: './public/styles/'
+    destination: './'
 
 # error handle
 handleError = (err) ->

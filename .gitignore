@@ -1,6 +1,9 @@
 # Mac
 .DS_Store
 
+# compiled files
 *.css
 *.js
 
+# npm
+node_modules/
