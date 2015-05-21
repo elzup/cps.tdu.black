@@ -4,6 +4,7 @@
 # compiled files
 *.css
 *.js
+*.html
 
 # npm
 node_modules/
