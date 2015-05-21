@@ -85,64 +85,70 @@ html(lang='ja')
         // クラス必要?
         p 趣味や研究活動など充実しているiwi研民の一日とは？
       hr
+
       .row
-        .col-llb
-          #profile.row
-            .col-ll.house-left
-              img(src='img/p0.jpg')
-              p.belong 未来科学部情報メディア学科4年
-              p.name ウマお(TJM)
-              p
-                | 残留申請を1ヶ月分まとめて出すと自由に残留できるためおすすめです。
-                a(href='http://cps.elzup.com/') http://cps.elzup.com/
-                | を使うと1年分の残留申請を作成してくことが出来ます。
-            .col-rr.house-right
-              img(src='img/p1.jpg')
-              br
-              img(src='img/p2.jpg')
-              br
-              img(src='img/p3.jpg')
-              br
-          #opt.row
-            .col-50
-              img.food(src='img/food.jpg')
-              p.help
-                | 東京千住キャンパスの岩井研究プレート0円(先生のお計らい,早い者勝ち)
-              #menu.option
-                h5 岩井研メニュー一例
-                table.lr-table(border='0')
-                  tr
-                    td 親子丼
-                    td 0円
-                  tr
-                    td 麻婆なす丼
-                    td 0円
-                  tr
-                    td そぼろ丼
-                    td 0円
-            .col-50
-              #depart.lr-table
-                p サポートDATA
-                table(border='0')
-                  tr
-                    td iwhr商店(菓子)
-                    td 100円〜
-                  tr
-                    td sue商店(水2L)
-                    td 90円
-                  tr
-                    td コーヒー
-                    td 20円
-                  tr
-                    td お米
-                    td 0円
-                  tr
-                    td 電大の湯
-                    td 100円
-                  tr
-                    td 定期券解約
-                    td -xx,xxx円
-        .col-rrb
+        .col-half
+          section#profile
+            .row
+              .profile-main
+                img(src='img/p0.jpg')
+                p.belong 未来科学部情報メディア学科4年
+                p.name ウマお(TJM)
+                p
+                  | 残留申請を1ヶ月分まとめて出すと自由に残留できるためおすすめです。
+                  a(href='http://cps.elzup.com/') http://cps.elzup.com/
+                  | を使うと1年分の残留申請を作成してくことが出来ます。
+              .sub-images
+                img(src='img/p1.jpg')
+                br
+                img(src='img/p2.jpg')
+                br
+                img(src='img/p3.jpg')
+                br
+
+          section#options
+            .row
+              .col-half
+                section#food
+                  img.food(src='img/food.jpg')
+                  .row
+                    #menu.option
+                      h5 丼
+                      table.lr-table(border='0')
+                        tr
+                          td 親子丼
+                          td 0円
+                        tr
+                          td 麻婆なす丼
+                          td 0円
+                        tr
+                          td そぼろ丼
+                          td 0円
+                    p.help
+                      | 岩井研プレート0円(先生のお計らい,早い者勝ち)
+              .col-half
+                section#depart
+                  p サポートDATA
+                  table
+                    tr
+                      td iwhr商店(菓子)
+                      td 100円〜
+                    tr
+                      td sue商店(水2L)
+                      td 90円
+                    tr
+                      td コーヒー
+                      td 20円
+                    tr
+                      td お米
+                      td 0円
+                    tr
+                      td 電大の湯
+                      td 100円
+                    tr
+                      td 定期券解約
+                      td -xx,xxx円
+        .col-half
           h3.both 1日のスケジュール
           img.day(src='./img/day.png')
           h3.both 研究室訪問の目安

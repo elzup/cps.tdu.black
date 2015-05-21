@@ -10,6 +10,9 @@ body
 *
   word-wrap break-word
 
+img
+  width 100%
+
 header
   width 100%
   background url(img/eyecatch) no-repeat
@@ -41,6 +44,12 @@ theme(color)
 row-margin()
   >*
     margin 10px 10px
+
+// TODO: out overflow
+.col-half
+  width 50%
+  overflow hidden
+
 
 #abstract
   background #33B9FF
@@ -102,75 +111,80 @@ row-margin()
     >p
       position absolute
       bottom 0
+      color #659BFC
+      margin-left 13px
+
+#profile
+  background #D4F8FF
+  margin 10px
+  padding 5px
+  .profile-main
+    margin 5px
+    width 60%
+    .name
+      font-weight bold
+      text-align center
+      margin 5px
+    .belong
+      text-align center
+      margin 5px
+  .sub-images
+    margin 5px
+    width 40%
+    img
+      width 100%
 
 
-
-.house-left
-  width 366px !important
-.house-right img
-  width 260px
-
-
-.col-ll 
-  width 50%
-  padding 10px
-
-
-.col-llb 
-  width 720px
-  padding 10px
-
-
-
-.col-rr 
-  width 40%
-
-
-.col-rrb 
-  width 570px
-
-
-.col-50 
-  width 40%
-  padding 5%
-
-
-img 
+#options
   width 100%
+  #food
+    margin 5px
+    #menu
+      width 40%
+    p.help
+      width 60%
+      font-size 10px
+      padding 5px
+  #depart
+    background url(img/note.jpg) no-repeat
+    background-size 100%
+    padding 81px 27px 168px 31px
+    p
+      color #659BFC !important
+      font-size 23px
+      padding-bottom 10px
+    table
+      border-collapse separate
+      border-spacing 3px
+      width 100%
+      td
+        text-align left
+      td:nth-of-type(2)
+        text-align right
 
-img.day 
-  width 503px
+#menu
+  border solid 5px white
+  background white
+  box-shadow 0 0 0 1px, 0 0 0 1px inset
+  position relative
+  top -50px
+  font-size 10px
+  h5
+    background #FFFCC7
+    text-align center
+    border-left solid 1px
+    border-top solid 1px
+    border-right solid 1px
+    padding 2px
+  table
+    margin 5px
+    width 90%
+
+img.day
   margin 0 auto
 
-#profile 
-  background #D4F8FF
-  width 680px
-  height 640px
-  .col-rr img 
-    height 200px
-  
-  .name 
-    font-weight bold
-    text-align center
-  
-  .belong 
-    text-align center
-
-#opt 
-  width 680px
 
 
-p.help 
-  margin-left 150px
-  font-size 10px
-  width 136px
-
-
-
-
-span.tail 
-  color #659BFC
-  margin-left 13px
 
 hr
   width 95%
@@ -221,26 +235,7 @@ td, th
   img 
     width 244px
 
-
-#depart 
-  background url(img/note.jpg) no-repeat
-  background-size 268px
-  padding 100px 34px 168px 43px
-  p 
-    color #659BFC !important
-    font-size 23px
-  table 
-    width 100%
-
-
-.lr-table
-  td 
-    text-align left
-  td:nth-of-type(2) 
-    text-align right
-
-
-#room 
+#room
   border solid 1px #659BFC
   margin 30px auto
   width 90%
@@ -256,36 +251,13 @@ td, th
         color white
         padding 1px 3px
         margin-right 5px
-  .col-rr img 
+  .col-rr img
     width 600px
   .col 
     width 200px
 
-#menu 
-  width 50%
-  border solid 5px white
-  background white
-  box-shadow 0 0 0 1px, 0 0 0 1px inset
-  position relative
-  top -100px
-  left -25px
-  font-size 10px
-  h5 
-    background #FFFCC7
-    text-align center
-    border-left solid 1px
-    border-top solid 1px
-    border-right solid 1px
-    padding 2px
-  table 
-    margin 5px
-    width 90%
 
-
-.food 
-  width 260px
-
-.auther 
+.auther
   text-align right
   padding 0 20px
   a 
