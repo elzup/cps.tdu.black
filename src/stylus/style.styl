@@ -189,43 +189,25 @@ row-margin()
     margin 5px
     width 90%
 
-img.day
-  margin 0 auto
-
-
-
-
 hr
-  width 95%
-
-
-table.time 
   width 100%
-  font-size 10px
 
 table.time
+  width 100%
+  font-size 10px
   border solid 1px white
-
-
-table.time td 
-  background #B6FCFF
-  border solid 1px white
-
-
-table.time th 
-  background #5ACDFF
-  color white
-  border solid 1px white
-
-
-td.thd 
-  background #DADADA !important
-  width 30%
-
-
-td, th 
-  text-align center
-
+  td
+    text-align center
+    background #B6FCFF
+    border solid 1px white
+    &.thd
+      background #DADADA !important
+      width 30%
+  th
+    text-align center
+    background #5ACDFF
+    color white
+    border solid 1px white
 
 .row.spot
   >div:nth-of-type(1) 
@@ -233,37 +215,41 @@ td, th
   >div:nth-of-type(2) 
     width 261px
 
-
 .spot
-  >div:nth-of-type(1) 
+  .img
     width 40%
-  >div:nth-of-type(2) 
-    width 50%
-  h5
-    font-weight bold
-  img 
-    width 244px
+    img
+      width 100%
+  .text
+    padding 5px
+    width 60%
+    h3
+      font-weight bold
 
 #room
   border solid 1px #659BFC
-  margin 30px auto
-  width 90%
+  margin 10px
   padding 0
-  .col-ll 
-    margin 0
-    padding 0
-    h5 
-      color #659BFC
-      padding 0
-      span 
-        background #659BFC
-        color white
-        padding 1px 3px
-        margin-right 5px
-  .col-rr img
-    width 600px
-  .col 
-    width 200px
+  .lists
+    width 50%
+    padding 10px
+    .row
+      .col
+        width 33%
+        ul
+          margin-left 5px
+        h5
+          color #659BFC
+          margin 5px 0
+          span
+            background #659BFC
+            color white
+            padding 1px 3px
+            margin-right 5px
+  .img
+    width 50%
+    img
+      width 100%
 
 
 .auther

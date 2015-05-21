@@ -167,76 +167,60 @@ html(lang='ja')
                       | #{time}
                     for _ in [,,,,,]
                       td 可
-          h3.ribbon 周辺スポット
-          .row.spot
-            div
-              img(src='./img/kinkaku.jpg')
-            div
-              h5 清水寺
-              p 嵐山は桜や紅葉の名所である。日本さくら名所100選に選定されている。京都市街の西に位置し、平安時代に貴族の別荘地となって以来、京都の代表的な観光地となっている
-          .row.spot
-            div
-              img(src='./img/matyu.jpg')
-            div
-              h5 タージ・マハル
-              p イタリアのピサ市にあるピサ大聖堂の鐘楼であり、世界遺産「ピサのドゥオモ広場」を構成する観光スポットである
+          section
+            h3.ribbon 周辺スポット
+            .spot.row
+              .img
+                img(src='./img/kinkaku.jpg')
+              .text
+                h3 清水寺
+                p 嵐山は桜や紅葉の名所である。日本さくら名所100選に選定されている。京都市街の西に位置し、平安時代に貴族の別荘地となって以来、京都の代表的な観光地となっている
+            .spot.row
+              .img
+                img(src='./img/matyu.jpg')
+              .text
+                h3 タージ・マハル
+                p イタリアのピサ市にあるピサ大聖堂の鐘楼であり、世界遺産「ピサのドゥオモ広場」を構成する観光スポットである
+    section#room
       .row
-        #room.row
-          .col-ll
-            .row
-              .col
-                h5
-                  span.index 1
-                  | 寝具
-                ul
-                  li ソファーベット(独占)
-                  li ソファーベット(2人)
-                  li ソファーベット(3人)
-                  li 椅子の上
-                  li 椅子の上(2個)
-                  li 椅子の上(3個)
-                  li 椅子の上(4個)
-                  li マットレス
-                  li スポンジベッド
-                  li 棚の下
-              .col
-                h5
-                  span.index 2
-                  | 神具
-                ul
-                  li 炊飯器
-                  li コーヒーサーバ
-                  li 電気ケトル
-                  li 水槽
-                  li キッチン
-                  li 調味料
-                h5
-                  span.index 3
-                  | ホワイトボード
-                ul
-                  li 女子大プロジェクト
-                  li 落書き
-                  li 暗号
-              .col
-                h5
-                  span.index 4
-                  | 棚
-                ul
-                  li プリンター
-                  li ジェンガ
-                  li シャンプーセット
-                h5
-                  span.index 4
-                  | テレビ
-                ul
-                  li PS4
-                  li Wii
-                  li PS3
-                  li Kinect
-                  li ステレオ
-                  li HDDレコーダー
-          .col-rr
-            img(src='./img/room.jpg')
+        .lists
+          .row
+            .col
+              h5
+                span.index 1
+                | 寝具
+              ul
+                for item in ['ソファーベット(独占)', 'ソファーベット(2人)', 'ソファーベット(3人)', '椅子の上', '椅子の上(2個)', '椅子の上(3個)', '椅子の上(4個)', 'マットレス', 'スポンジベッド', '棚の下']
+                  li=item
+            .col
+              h5
+                span.index 2
+                | 神具
+              ul
+                for item in ['炊飯器', 'コーヒーサーバ', '電気ケトル', '水槽', 'キッチン', '調味料']
+                  li=item
+              h5
+                span.index 3
+                | ホワイトボード
+              ul
+                for item in ['女子大プロジェクト', '落書き', '暗号']
+                  li=item
+            .col
+              h5
+                span.index 4
+                | 棚
+              ul
+                for item in ['プリンター', 'ジェンガ', 'シャンプーセット']
+                  li=item
+              h5
+                span.index 4
+                | テレビ
+              ul
+                for item in ['PS4', 'Wii', 'PS3', 'Kinect', 'ステレオ', 'HDDレコーダー']
+                  li=item
+        .img
+          img(src='./img/room.jpg')
+
     .auther
       p
         | どうぞ2015年度パンフレットを見比べてください
