@@ -149,69 +149,25 @@ html(lang='ja')
                       td 定期券解約
                       td -xx,xxx円
         .col-half
-          h3.both 1日のスケジュール
-          img.day(src='./img/day.png')
-          h3.both 研究室訪問の目安
-          table.time
-            tbody
-              tr
-                th
-                th 月曜
-                th 火曜
-                th 水曜
-                th 木曜
-                th 金曜
-              tr
-                td.thd
-                  | 1時限
-                  br
-                  | 9:00→10:30
-                td 可
-                td 可
-                td 可
-                td 可
-                td 可
-              tr
-                td.thd
-                  | 2時限
-                  br
-                  | 10:40→12:10
-                td 可
-                td 可
-                td 可
-                td 可
-                td 可
-              tr
-                td.thd
-                  | 3時限
-                  br
-                  | 13:10→14:40
-                td 可
-                td 可
-                td 可
-                td 可
-                td 可
-              tr
-                td.thd
-                  | 4時限
-                  br
-                  | 14:50→16:20
-                td 可
-                td 可
-                td 可
-                td 可
-                td 可
-              tr
-                td.thd
-                  | 5時限
-                  br
-                  | 16:30→18:00
-                td 可
-                td 可
-                td 可
-                td 可
-                td 可
-          h3.both 周辺スポット
+          section
+            h3.ribbon 1日のスケジュール
+            img.day(src='./img/day.png')
+          section
+            h3.ribbon 研究室訪問の目安
+            table.time
+              tbody
+                tr
+                  for day in [, '月曜', '火曜', '水曜', '木曜', '金曜']
+                    th=day
+                each term, time in {'1時限': '9:00→10:30', '2時限': '10:40→12:10', '3時限': '13:10→14:40', '4時限': '14:50→16:20', '5時限': '16:30→18:00'}
+                  tr
+                    td.thd
+                      | #{term}
+                      br
+                      | #{time}
+                    for _ in [,,,,,]
+                      td 可
+          h3.ribbon 周辺スポット
           .row.spot
             div
               img(src='./img/kinkaku.jpg')
