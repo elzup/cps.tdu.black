@@ -3,6 +3,7 @@
 
 # compiled files
 *.css
+*.css.map
 *.js
 *.html
 

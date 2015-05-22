@@ -56,14 +56,14 @@ gulp.task 'script', ->
 gulp.task "style", ->
   gulp
     .src config.styles.watch
+    .pipe $.sourcemaps.init()
     .pipe stylus
-      set: ['compress']
+      compress: true
     .pipe autoprefixer
       browsers: ['last 2 versions']
-
+    .pipe $.sourcemaps.write('.')
     .on 'error', handleError
     .pipe gulp.dest config.styles.destination
-#  .pipe stylus
 
 
 # watch
