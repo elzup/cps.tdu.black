@@ -1,10 +1,10 @@
 cps.tdu.black
 ===
 
-東京電機大学 情報メディア学科 [実空間コンピューティング研究室](http://www.cps.im.dendai.ac.jp/) の紹介ページです
+Public Web: [cps.tdu.black](http://cps.tdu.black)
 
 ## Description
-Public Web: [cps.tdu.black](cps.tdu.black)
+東京電機大学 情報メディア学科 [実空間コンピューティング研究室](http://www.cps.im.dendai.ac.jp/) の紹介ページです
 
 ## Requirement
 
