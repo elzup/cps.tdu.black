@@ -8,8 +8,11 @@ Public Web: [cps.tdu.black](cps.tdu.black)
 
 ## Requirement
 
-PackageManager
+PackageManagers
 * npm
+* bower
+
+Buildtools
 * gulp
 
 HTML Template Engine
@@ -24,12 +27,23 @@ Javascript Preprocessor
 for development setting.
 
 ```sh
+# npm
 npm install
+
+# bower
+bower install
+
+# gulp
 gulp
 ```
 
 gulpfile is **gulpfile.coffee**  
 you update src/ and compile with gulp.
+
+## Acknowledgements
+cps.tdu.black uses these libraries.
+
+* [normalize.css by necoals](https://github.com/necolas/normalize.css)
 
 ## Contribution
 
