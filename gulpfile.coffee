@@ -13,7 +13,7 @@ $ = require('gulp-load-plugins')()
 config =
   templates:
     source: './src/jade'
-    watch: './src/jade/**/*.jade'
+    watch: './src/jade/*.jade'
     destination: './public/'
     config:
       pretty: true
