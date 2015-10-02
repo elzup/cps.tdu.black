@@ -14,19 +14,19 @@ config =
   templates:
     source: './src/jade'
     watch: './src/jade/**/*.jade'
-    destination: './'
+    destination: './public/'
     config:
       pretty: true
   scripts:
     source: './src/coffee'
     watch: './src/coffee/*.coffee'
-    destination: './'
+    destination: './public/js'
     option:
       bare: true
   styles:
     source: './src/stylus'
     watch: './src/stylus/*.styl'
-    destination: './'
+    destination: './public/css'
 
 # error handle
 handleError = (err) ->
@@ -70,6 +70,7 @@ gulp.task "style", ->
 gulp.task 'watch', ->
   gulp.watch config.scripts.watch, ['script']
   gulp.watch config.styles.watch, ['style']
+  gulp.watch config.styles.watch, ['template']
 
 #load
 gulp.task 'default', ["script", "style", "template"]

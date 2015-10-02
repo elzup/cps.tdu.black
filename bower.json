@@ -1,0 +1,19 @@
+{
+  "name": "cps.tdu.black",
+  "version": "0.0.0",
+  "homepage": "https://github.com/elzzup/cps.tdu.black",
+  "authors": [
+    "elzzup <guild0105@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "normalize.css": "~3.0.3"
+  }
+}
